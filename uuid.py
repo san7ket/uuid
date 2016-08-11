@@ -11,7 +11,7 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-r", "--replace", help="replace all @Id")
+parser.add_argument("-r", "--replace", help="if 1 replace all @Id else pass 0")
 parser.add_argument("-f", "--filename", help="filepath")
 args = parser.parse_args()
 newname = args.filename +".bak"
