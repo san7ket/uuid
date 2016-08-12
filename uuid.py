@@ -14,6 +14,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--filename", help="filepath")
 args = parser.parse_args()
+if not args.filename:
+	print "\nSee --help option\n\n" 
 newname = args.filename +".bak"
 os.rename(args.filename, newname)
 print args.filename
